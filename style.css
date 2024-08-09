@@ -60,6 +60,7 @@
     flex-direction: column;
     right: 0;
     left: 0;
+
 }
 
 #header-and-pic h1 {
@@ -74,6 +75,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 1vw;
+    filter: drop-shadow(0.2vw 0.2vw 0.2vw  rgb(0, 0, 0))
 }
 
 #recipe-details-full {
@@ -173,6 +175,7 @@
     background-color: rgba(145, 144, 144, 0.145);
     border-radius: 0.4vw;
     width: 70vw;
+    font-size: 1.7vw;
 }
 
 .ingredient {
@@ -184,4 +187,90 @@
     width: 10vw;
     text-align: start;
     padding-left: 1vw;
+}
+
+.instructions-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titel {
+    width: 70vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.time-details {
+    width: 70vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    padding-bottom: 3vw;
+}
+
+.time-details div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 2vw;
+    width: auto;
+    padding: 0 0.6vw;
+    background: rgba(145, 144, 144, 0.145);
+    border-radius: 0.6vw;
+}
+
+.time-details img {
+    width: 1vw;
+    height: auto;
+    padding: 0 0.5vw;
+}
+
+.instructions {
+    width: 70vw;
+    height: auto;
+    font-size: 1.6vw;
+    padding-bottom: 2.5vw;
+}
+
+.author-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    width: 70vw;
+    text-align: start;
+}
+
+.author img {
+    width: 8vw;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2vw;
+    padding: 0.3vw;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(255, 166, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(76, 0, 130, 0.5), rgba(238, 130, 238, 0.5));
+    box-sizing: border-box;
+}
+
+.author {
+    width: 70vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.author p {
+    font-size: 2vw;
+    filter: drop-shadow(0.05vw 0.05vw 0  blue)
 }
