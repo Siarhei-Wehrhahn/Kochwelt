@@ -1,5 +1,7 @@
-.body {
+body {
     font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #header-full {
@@ -15,7 +17,7 @@
     height: 6vw;
 }
 
-#header-link {
+#mobile-menu {
     width: 35vw;
     height: 6.5vw;
     font-size: 1.6vw;
@@ -25,14 +27,14 @@
     flex-direction: row;
 }
 
-#header-link a {
+#mobile-menu a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.549);
     position: relative; /* Damit das ::after-Pseudoelement relativ zum Link positioniert wird */
 }
 
-#header-link a:hover::after,
-#header-link a:visited::after {
+#mobile-menu a:hover::after,
+#mobile-menu a:visited::after {
     content: ''; 
     position: absolute;
     left: 0;
@@ -49,6 +51,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.burger-menu-line {
+    width: 4vw;
+    height: 0.1vw;
+    background-color: black;
+    padding: 2vw 0;
 }
 
 #header-and-pic {
@@ -146,6 +162,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 1vw;
+    filter: drop-shadow(0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.442));
 }
 
 #text-input {
@@ -175,7 +193,12 @@
     background-color: rgba(145, 144, 144, 0.145);
     border-radius: 0.4vw;
     width: 70vw;
-    font-size: 1.7vw;
+    font-size: 1.2vw;
+}
+
+#ingredients-table tbody tr { 
+    width: 70vw;
+    font-size: 1.5vw;
 }
 
 .ingredient {
@@ -206,6 +229,7 @@
 
 .time-details {
     width: 70vw;
+    font-size: 1.3vw;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -249,6 +273,7 @@
 .text {
     width: 70vw;
     text-align: start;
+    font-size: 1.8vw;
 }
 
 .author img {
@@ -257,7 +282,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 2vw;
-    padding: 0.3vw;
+    padding: 0.15vw;
     background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(255, 166, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(76, 0, 130, 0.5), rgba(238, 130, 238, 0.5));
     box-sizing: border-box;
 }
@@ -273,4 +298,66 @@
 .author p {
     font-size: 2vw;
     filter: drop-shadow(0.05vw 0.05vw 0  blue)
+}
+
+.footer {
+    color: white;
+    height: 3vw;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    padding: 0 0.5vw; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 3vw;
+}
+
+.copyright {
+    padding-left: 1vw;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-right: 40%;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    padding: 0 1vw;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 1vw;
+}
+
+.burger-menu-line {
+    width: 4vw;
+    height: 0.01vw;
+    background-color: black;
+    margin: 0.3vw 0;
+    border-radius: 0.1vw;
+}
+
+@media(max-width: 400px) {
+    #mobile-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
 }
