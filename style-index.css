@@ -1,0 +1,47 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1vw 15vw;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#logo img {
+    height: 6vw;
+}
+
+#mobile-menu {
+    width: 35vw;
+    height: 6.5vw;
+    font-size: 1.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+}
+
+#mobile-menu a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.549);
+    position: relative; /* Damit das ::after-Pseudoelement relativ zum Link positioniert wird */
+}
+
+#mobile-menu a:hover::after,
+#mobile-menu a:visited::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1.1vw;
+    height: 3px;
+    color: green;
+    background-color: green;
+    border-radius: 2px; 
+}

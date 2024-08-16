@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../BurgerMe/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a href="../DailyRecipe/index.html"><img class="kochwelt-logo" src="../img/logo.png" alt="Kochwelt logo" /></a>
+      </div>
+      <div class="navbar">
+        <a class="a-tags mobile-hide" href="../DailyRecipe/index.html">Start</a>
+        <a class="a-tags mobile-hide" href="../RecipeView/recipe.html">Rezept des Tages</a>
+        <a class="a-tags mobile-hide" href="../kochwelt - gabriel/kontaktformular/index.html">Kontakt</a>
+        <a class="a-tags mobile-hide" href="../../Kochwelt/impressum.html">Impressum</a>
+      </div>
+  
+      <div class="hamburger-icon" id="rotateButton">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+  
+      <div class="hamburger-menu d-none" id="fenster">
+        <a class="a-tags" href="../DailyRecipe/index.html">Start</a>
+        <a class="a-tags" href="../RecipeView/recipe.html">Rezept des Tages</a>
+        <a class="a-tags" href="../kochwelt - gabriel/kontaktformular/index.html">Kontakt</a>
+        <a class="a-tags" href="../../Kochwelt/impressum.html">Impressum</a>
+      </div>
+  
+    </header>
+
+
+    <div class="contact-section">
+      <div class="contact">
+        <h1>Kontaktiere uns</h1>
+
+        <span class="name">Dein Name:</span>
+        <input class="small-input" type="text"placeholder="Name, Vorname" />
+
+        <span class="e-mail">Deine E-Mail:</span>
+        <input class="small-input" type="text" placeholder="Deine E-Mail adresse"/>
+
+        <span class="message">Deine Nachricht:</span>
+       <textarea class="big-input" type="text" placeholder="Teile uns dein Anliegen mit" ></textarea> 
+        <div class="button">
+          <button class="send">Abschicken</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="copyright">
+          <p>© 2024 Kochwelt</p>
+      </div>
+
+      <div class="info">
+          <a href="#">Impressum</a>
+          <p>|</p>
+          <a href="#">Datenschutz</a>
+      </div>
+  </div>
+
+  </body>
+  <script>
+    document.getElementById('rotateButton').addEventListener('click', function () {
+      const fenster = document.getElementById('fenster');
+  
+      if (fenster.classList.contains('open')) {
+        fenster.style.transform = 'rotateX(90deg)';
+        fenster.classList.remove('open');
+        setTimeout(() => {
+          fenster.style.display = 'none';
+        }, 500);
+      } else {
+        // Menü öffnen
+        fenster.style.display = 'flex';
+        setTimeout(() => {
+          fenster.style.transform = 'rotateX(0deg)';
+        }, 1);
+        fenster.classList.add('open');
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,366 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1vw 15vw;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#logo img {
+    height: 6vw;
+}
+
+#mobile-menu {
+    width: 35vw;
+    height: 6.5vw;
+    font-size: 1.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+}
+
+#mobile-menu a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.549);
+    position: relative; /* Damit das ::after-Pseudoelement relativ zum Link positioniert wird */
+}
+
+#mobile-menu a:hover::after,
+#mobile-menu a:visited::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1.1vw;
+    height: 3px;
+    color: rgb(2, 167, 2);
+    background-color: rgb(2, 167, 2);
+    border-radius: 2px; 
+}
+
+.titel-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.burger-menu-line {
+    width: 4vw;
+    height: 0.1vw;
+    background-color: black;
+    padding: 2vw 0;
+}
+
+#header-and-pic {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+
+}
+
+#header-and-pic h1 {
+    font-size: 2.5vw;
+    font-weight: 300;
+    padding-top: 3.5vw;
+}
+
+#header-and-pic img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1vw;
+    filter: drop-shadow(0.2vw 0.2vw 0.2vw  rgb(0, 0, 0))
+}
+
+#recipe-details-full {
+    width: 70vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 1vw;
+}
+
+#recipe-details-full img {
+    width: 1vw;
+    height: auto;
+}
+
+.recipe-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 2vw;
+    width: 8vw;
+    background: rgba(145, 144, 144, 0.145);
+    border-radius: 0.6vw;
+}
+
+.recipe-details p {
+    font-size: 1.2vw;
+    padding-left: 0.5vw;
+}
+
+.recipe-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portions {
+    width: 70vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.666);
+}
+
+.recipe-ingredients {
+    width: 70vw;
+}
+
+#the-line {
+    width: 69vw;
+    height: 0.1vw;
+    background-color: rgba(128, 128, 128, 0.338);
+    margin-left: 14vw;
+    margin-top: 3vw;
+}
+
+#servings-btn {
+    background-color: rgb(2, 167, 2);
+    color: white;
+    width: 10vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1vw;
+    filter: drop-shadow(0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.442));
+}
+
+#text-input {
+    width: 10vw;
+    height: 1.7vw;
+    margin-left: 1vw;
+}
+
+#portions-text {
+    padding-right: 1vw;
+    font-size: 2vw;
+}
+
+#ingredients-table tbody {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+#ingredients-table tbody tr {
+    padding: 0.7vw;
+}
+
+#ingredients-table tbody tr:nth-child(even) {
+    background-color: rgba(145, 144, 144, 0.145);
+    border-radius: 0.4vw;
+    width: 70vw;
+    font-size: 1.2vw;
+}
+
+#ingredients-table tbody tr { 
+    width: 70vw;
+    font-size: 1.5vw;
+}
+
+.ingredient {
+    width: 40vw;
+    text-align: start; 
+    padding-left: 2vw;
+}
+
+.amount {
+    width: 10vw;
+    text-align: end;
+    padding-left: 1vw;
+}
+
+.instructions-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titel {
+    width: 70vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.time-details {
+    width: 70vw;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    padding-bottom: 3vw;
+}
+
+.time-details div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 2vw;
+    width: auto;
+    padding: 0 0.6vw;
+    background: rgba(145, 144, 144, 0.145);
+    border-radius: 0.6vw;
+}
+
+.time-details img {
+    width: 1vw;
+    height: auto;
+    padding: 0 0.5vw;
+}
+
+.instructions {
+    width: 70vw;
+    height: auto;
+    font-size: 1.6vw;
+    padding-bottom: 2.5vw;
+}
+
+.author-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    width: 70vw;
+    text-align: start;
+    font-size: 1.8vw;
+}
+
+.author img {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 101px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0.15vw;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(255, 166, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(76, 0, 130, 0.5), rgba(238, 130, 238, 0.5));
+    box-sizing: border-box;
+}
+
+.author {
+    width: 70vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.author p {
+    font-size: 2vw;
+    filter: drop-shadow(0.05vw 0.05vw 0  blue)
+}
+
+.footer {
+    color: white;
+    height: 3vw;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    padding: 0 0.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 3vw;
+}
+
+.copyright {
+    padding-left: 1vw;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-right: 40%;
+    height: 3vw;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    padding: 0 1vw;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 1vw;
+}
+
+.burger-menu-line {
+    width: 4vw;
+    height: 0.01vw;
+    background-color: black;
+    margin: 0.3vw 0;
+    border-radius: 0.1vw;
+}
+
+@media(max-width: 400px) {
+    #mobile-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}

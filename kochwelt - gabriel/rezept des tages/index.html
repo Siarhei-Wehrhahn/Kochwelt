@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../BurgerMe/script.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a href="../../DailyRecipe/index.html"><img class="kochwelt-logo" src="../img/logo.png" alt="Kochwelt logo" /></a>
+      </div>
+      <div class="navbar">
+        <a class="a-tags mobile-hide" href="../../DailyRecipe/index.html">Start</a>
+        <a class="a-tags mobile-hide" href="../../RecipeView/recipe.html">Rezept des Tages</a>
+        <a class="a-tags mobile-hide" href="../kontaktformular/index.html">Kontakt</a>
+        <a class="a-tags mobile-hide" href="../../Kochwelt/impressum.html">Impressum</a>
+      </div>
+  
+      <div class="hamburger-icon" id="rotateButton">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+  
+      <div class="hamburger-menu d-none" id="fenster">
+        <a class="a-tags" href="../../DailyRecipe/index.html">Start</a>
+        <a class="a-tags" href="../../RecipeView/recipe.html">Rezept des Tages</a>
+        <a class="a-tags" href="../kontaktformular/index.html">Kontakt</a>
+        <a class="a-tags" href="../../Kochwelt/impressum.html">Impressum</a>
+      </div>
+  
+    </header>
+  
+
+    <section class="cover">
+      <div class="cover-headline">
+        <h1>Hackbällchen in Tomatensauce</h1>
+        <div class="image">
+          <img
+            class="food-img"
+            src="../img/hackbällchen.jpg"
+            alt="Hackballchen in Tomatensauce"
+          />
+        </div>
+
+        <div class="info-field-container">
+          <div class="time-container">
+            <div class="clock">
+              <img
+                class="clock-image"
+                src="../img/icons/clock-regular.svg"
+                alt="Clock logo"
+              />
+            </div>
+            <div class="time">ca. 30 Min</div>
+          </div>
+
+          <div class="brain-container">
+            <div class="brain">
+              <img
+                class="brain-image"
+                src="../img/icons/brain-solid.svg"
+                alt="Brain logo"
+              />
+            </div>
+            <div class="toughness">Hobbykoch</div>
+          </div>
+
+          <div class="cal-container">
+            <div class="cal">
+              <img
+                class="cal-image"
+                src="../img/icons/calendar-alt-regular.svg"
+                alt="Brain logo"
+              />
+            </div>
+            <div class="date">ca. 30 Min</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border" />
+
+    <section class="main-part">
+      <span> Zutaten für </span>
+      <input class="how-many" type="number" placeholder="1" min="1" max="30" />
+
+      <button class="button">Portionen</button>
+    </section>
+
+    <table>
+      <tr>
+        <td class="td-left row-grey"data-base-amount="500" data-unit="g">500 g</td>
+        <td class="td-right row-grey">Hackfleisch vom Rind</td>
+      </tr>
+      <tr>
+        <td class="td-left row-white"data-base-amount="1" data-unit="Ei/er">1</td>
+        <td class="td-right row-white">Ei(er)</td>
+      </tr>
+      <tr>
+        <td class="td-left row-grey"data-base-amount="2" data-unit="Stück">2</td>
+        <td class="td-right row-grey">Knoblauchzehe(n)</td>
+      </tr>
+      <tr>
+        <td class="td-left row-white"data-base-amount="1" data-unit="Stück">1</td>
+        <td class="td-right row-white">Zwiebel</td>
+      </tr>
+      <tr>
+        <td class="td-left row-grey"></td>
+        <td class="td-right row-grey">Paniermehl</td>
+      </tr>
+      <tr>
+        <td class="td-left row-white"></td>
+        <td class="td-right row-white">Salz & Pfeffer</td>
+      </tr>
+      <tr>
+        <td class="td-left row-grey"></td>
+        <td class="td-right row-grey">Paprikapulver</td>
+      </tr>
+      <tr>
+        <td class="td-left row-white"></td>
+        <td class="td-right row-white">Basilikum</td>
+      </tr>
+      <tr>
+        <td class="td-left row-grey"data-base-amount="2" data-unit="Dosen">2 Dosen</td>
+        <td class="td-right row-grey">Tomaten in Stücke</td>
+      </tr>
+      <tr>
+        <td class="td-left row-white"></td>
+        <td class="td-right row-white">Olivenöl</td>
+      </tr>
+
+      <tr>
+        <td class="td-left row-grey"data-base-amount="100" data-unit="ml">100 ml</td>
+        <td class="td-right row-grey">Apfelsaft</td>
+      </tr>
+
+      <tr>
+        <td class="td-left row-white"data-base-amount="150" data-unit="ml">150 ml</td>
+        <td class="td-right row-white">Sahne</td>
+      </tr>
+
+      <tr>
+        <td class="td-left row-grey"></td>
+        <td class="td-right row-grey">Rosenpaprika</td>
+      </tr>
+
+      <tr>
+        <td class="td-left row-white"data-base-amount="1" data-unit="TL">1 TL</td>
+        <td class="td-right row-white">Provence Kräuter</td>
+      </tr>
+
+      <tr>
+        <td class="td-left row-grey"data-base-amount="1" data-unit="TL">1 TL</td>
+        <td class="td-right row-grey">Zucker</td>
+      </tr>
+    </table>
+
+    <h2>Zubereitung</h2>
+    <section class="preparation">
+      <div class="info-field-container-low">
+        <div class="full-time-container">
+          <div class="clock">
+            <img
+              class="clock-image"
+              src="../img/icons/clock-regular.svg"
+              alt="Clock logo"
+            />
+          </div>
+          <div class="time">Gesamtzeit ca. 45. Min</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="description">
+      <span>
+        Aus Hackfleisch, Ei, Zwiebeln, Knoblauch und 2-3 EL Paniermehl einen
+        Fleischteig kneten, schön mit schmackes, Salz, Pfeffer, Rosenpaprika und
+        ca. 1 ½ TL Basilikum würzen. Daraus 25 kleine Bällchen formen und diese
+        in eine ca. 30 x 22 cm große Auflaufform legen.
+        <br /><br />
+        Den Backofen vorheizen auf Ober-/Unterhitze 180° oder Umluft 160°.
+        <br /><br />
+        Die Zwiebeln in etwas Öl anschwitzen, den Knoblauch dazugeben, mit dem
+        Apfelsaft ablöschen und den Saft etwas einreduzieren lassen, dann die
+        Tomaten dazugeben und aufkochen lassen. Die Sahne dazugeben, nochmal
+        aufkochen lassen und mit Salz, Pfeffer, Kräutern der Provence,
+        Rosenpaprika und Zucker abschmecken. Die Sauce in die Auflaufform geben
+        und gut zwischen und auf den Hackbällchen verteilen.
+        <br /><br />
+        Und jetzt runter damit, lasst es euch schmecken.
+        <br /><br />
+      </span>
+
+      <h3>Rezept erstellt von</h3>
+
+      <div class="footer">
+        <img
+          class="creator"
+          src="../img/gabriel.jpeg"
+          alt="Picture of the creator Gabriel Mali"
+        />
+        <span class="name">Gabriel Mali</span>
+      </div>
+    </section>
+
+    <div class="footer-2">
+      <div class="copyright">
+          <p>© 2024 Kochwelt</p>
+      </div>
+
+      <div class="info">
+          <a href="#">Impressum</a>
+          <p>|</p>
+          <a href="#">Datenschutz</a>
+      </div>
+  </div>
+  </body>
+  <script>
+    document.getElementById('rotateButton').addEventListener('click', function () {
+      const fenster = document.getElementById('fenster');
+  
+      if (fenster.classList.contains('open')) {
+        fenster.style.transform = 'rotateX(90deg)';
+        fenster.classList.remove('open');
+        setTimeout(() => {
+          fenster.style.display = 'none';
+        }, 500);
+      } else {
+        // Menü öffnen
+        fenster.style.display = 'flex';
+        setTimeout(() => {
+          fenster.style.transform = 'rotateX(0deg)';
+        }, 1);
+        fenster.classList.add('open');
+      }
+    });
+  </script>
+</html>
+
+

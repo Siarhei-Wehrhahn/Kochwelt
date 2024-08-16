@@ -1,0 +1,17 @@
+.hamburger-line {
+  width: 32px;
+  height: 4px;
+  background-color: black;
+  margin-top: 4px;
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 250px;
+    padding: 16px;
+    margin-top: 8px;
+  }
+  .d-none{
+    display: none;
+  }
