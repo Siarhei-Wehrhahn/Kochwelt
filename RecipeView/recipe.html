@@ -1,65 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-    <link rel="stylesheet" href="style-recipe.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="../img/logo_small.png">
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="style-recipe.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
-    <div id="header-full">
-        <div id="logo">
-            <a href="../RecipeView/recipe.html"><img src="../img/logo.png" alt="kochwelt-logo"></a>
+    <header>
+        <div>
+            <a href="../index.html"><img class="kochwelt-logo" src="../img/logo.png"
+                    alt="Kochwelt logo" /></a>
+        </div>
+        <div class="navbar">
+            <a class="a-tags mobile-hide" href="../index.html">Start</a>
+            <a class="a-tags mobile-hide" href="../RecipeView/recipe.html">Rezept des Tages</a>
+            <a class="a-tags mobile-hide" href="../kochwelt - gabriel/kontaktformular/index.html">Kontakt</a>
+            <a class="a-tags mobile-hide" href="../Kochwelt/impressum.html">Impressum</a>
         </div>
 
-        <div id="burger-menu-container" class="burger-menu-container">
-            <div class="burger-menu">
-                <div class="burger-menu-line"></div>
-                <div class="burger-menu-line"></div>
-                <div class="burger-menu-line"></div>
-            </div>
-            <div id="mobile-menu" class="mobile-menu">
-                <a href="../DailyRecipe/index.html">Start</a>
-                <a href="../RecipeView/recipe.html">Rezept des Tages</a>
-                <a href="../kochwelt - gabriel/kontaktformular/index.html">Kontakt</a>
-                <a href="../Kochwelt/impressum.html">Impressum</a>
-            </div>
+        <div class="hamburger-icon" id="rotateButton">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
         </div>
 
-    </div>
+        <div class="hamburger-menu d-none" id="fenster">
+            <a class="a-tags" href="../index.html">Start</a>
+            <a class="a-tags" href="../RecipeView/recipe.html">Rezept des Tages</a>
+            <a class="a-tags" href="../kochwelt - gabriel/kontaktformular/index.html">Kontakt</a>
+            <a class="a-tags" href="../Kochwelt/impressum.html">Impressum</a>
+        </div>
+    </header>
 
-    <div class="titel-full">
-        <div id="header-and-pic">
+    <section class="cover">
+        <div class="cover-headline">
             <h1>Roggenbrot</h1>
-            <img src="../img/brot.JPG" alt="photo-of-dark-bread">
+            <div class="image">
+                <img class="food-img" src="../img/brot.JPG" alt="Roggenbrot" />
+            </div>
+
+            <div class="info-field-container">
+                <div class="time-container">
+                    <div class="clock">
+                        <img class="clock-image" src="../img/icons/clock-regular.svg" alt="Clock logo" />
+                    </div>
+                    <div class="time">ca. 90 Min</div>
+                </div>
+
+                <div class="brain-container">
+                    <div class="brain">
+                        <img class="brain-image" src="../img/icons/brain-solid.svg" alt="Brain logo" />
+                    </div>
+                    <div class="toughness">simpel</div>
+                </div>
+
+                <div class="cal-container">
+                    <div class="cal">
+                        <img class="cal-image" src="../img/icons/calendar-alt-regular.svg" alt="Calendar logo" />
+                    </div>
+                    <div class="date">09.08.2024</div>
+                </div>
+            </div>
         </div>
-
-        <div id="recipe-details-full">
-            <div class="recipe-details">
-                <img src="../img/icons/clock-regular.svg" alt="clock">
-                <p>20 Min.</p>
-            </div>
-
-            <div class="recipe-details">
-                <img src="../img/icons/brain-solid.svg" alt="dificult-level-logo-brain">
-                <p>simpel</p>
-            </div>
-
-            <div class="recipe-details">
-                <img src="../img/icons/calendar-alt-regular.svg" alt="calendar-icon">
-                <p>09.08.2024</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="the-line"></div>
+    </section>
 
     <div class="recipe-full">
         <div class="portions">
@@ -96,7 +108,7 @@
                         <td class="ingredient">Körner, oder Kräuter nach Wahl</td>
                     </tr>
                     <tr>
-                        <td class="amount" data-base-amount="3" data-unit="El">3 El</td>
+                        <td class="amount" data-base-amount="3" data-unit="EL">3 EL</td>
                         <td class="ingredient">Essig, (Frucht- oder Weinbranntweinessig)</td>
                     </tr>
                 </tbody>
@@ -104,72 +116,51 @@
         </div>
     </div>
 
-    <div class="instructions-full">
-        <div class="titel">
-            <p>Zubereitung</p>
-        </div>
-
-        <div class="time-details">
-            <div>
-                <img src="../img/icons/clock-regular.svg" alt="clock">
-                <p>Arbeitszeit ca. 20 Minuten</p>
-            </div>
-
-            <div>
-                <img src="../img/icons/clock-regular.svg" alt="clock">
-                <p>Ruhezeit ca. 10 Minuten</p>
-            </div>
-
-            <div>
-                <img src="../img/icons/clock-regular.svg" alt="clock">
-                <p>Koch-/Backzeit ca. 1 Stunde</p>
-            </div>
-
-            <div>
-                <img src="../img/icons/clock-regular.svg" alt="clock">
-                <p>Gesamtzeit ca. 1 Stunde 30 Minuten</p>
+    <h2>Zubereitung</h2>
+    <section class="preparation">
+        <div class="info-field-container-low">
+            <div class="full-time-container">
+                <div class="clock">
+                    <img class="clock-image" src="../img/icons/clock-regular.svg" alt="Clock logo" />
+                </div>
+                <div class="time">Gesamtzeit ca. 90 Min</div>
             </div>
         </div>
+    </section>
 
-        <div class="instructions">
-            <span>
-                Die 2 Tüten Trockenhefe mit einem Schneebesen in einer großen Schüssel im Wasser verrühren.
-                Die restlichen Zutaten dazugeben und mit dem Mixer und Knethacken gut kneten. Ich würde immer
-                den Mixer nehmen, da der Teig sehr klebrig ist. Den Teig in eine gefettete Kastenform geben
-                und bei 190°C Umluft eine Stunde backen. Den Backofen nicht vorheizen. Dann den Backofen
-                ausstellen und das Brot noch 10 Min. ruhen lassen. Wenn das Brot ausgekühlt ist, lässt es
-                sich auch prima einfrieren.
-                Anmerkung:
-                Als Körner nehme ich gerne 125 g Haferflocken und 125 g Sonnenblumenkerne, aber auch mit
-                TK-Kräutern oder Kümmel habe ich das Brot schon gemacht.
-            </span>
+    <section class="description">
+        <span>
+            Die 2 Tüten Trockenhefe mit einem Schneebesen in einer großen Schüssel im Wasser verrühren.
+            Die restlichen Zutaten dazugeben und mit dem Mixer und Knethacken gut kneten. Ich würde immer
+            den Mixer nehmen, da der Teig sehr klebrig ist. Den Teig in eine gefettete Kastenform geben
+            und bei 190°C Umluft eine Stunde backen. Den Backofen nicht vorheizen. Dann den Backofen
+            ausstellen und das Brot noch 10 Min. ruhen lassen. Wenn das Brot ausgekühlt ist, lässt es
+            sich auch prima einfrieren. <br />
+            <br />
+            Anmerkung: Als Körner nehme ich gerne 125 g Haferflocken und 125 g Sonnenblumenkerne, aber auch mit
+            TK-Kräutern oder Kümmel habe ich das Brot schon gemacht.
+        </span>
+
+        <h3>Rezept erstellt von</h3>
+
+        <div class="footer">
+            <img class="creator" src="../img/user.PNG" alt="Picture of the creator Sergej" />
+            <span class="name">Sergej</span>
         </div>
-    </div>
+    </section>
 
-    <div class="author-full">
-        <div class="text">
-            <p>Rezept erstellt von</p>
-        </div>
-
-        <div class="author">
-            <img src="../img/user.PNG" alt="user-photo">
-            <p>Sergej</p>
-        </div>
-    </div>
-
-    <div class="footer">
+    <div class="footer-2">
         <div class="copyright">
             <p>© 2024 Kochwelt</p>
         </div>
 
         <div class="info">
-            <a href="#">Impressum</a>
+            <a href="../Kochwelt/impressum.html">Impressum</a>
             <p>|</p>
-            <a href="#">Datenschutz</a>
+            <a href="../Kochwelt/datenschutz.html">Datenschutz</a>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 
 </html>

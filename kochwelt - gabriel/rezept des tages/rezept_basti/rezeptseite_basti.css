@@ -41,23 +41,16 @@ body {
     text-decoration-color: rgb(0, 128, 0);
   }
   
-  .hamburger-icon {
-    display: none;
-  }
-  
-  .hamburger-menu {
-    z-index: 999;
-    position: absolute;
-    top: 78px;
-    right: 6px;
-    display: none;
-  }
-  
   h1 {
     font-size: 32px;
     font-weight: 600;
     margin-top: 32px;
     margin-bottom: 32px;
+  }
+  
+  .cover {
+    display: flex;
+    flex-direction: column;
   }
   
   .cover-headline {
@@ -213,10 +206,17 @@ body {
     cursor: pointer;
     font-size: 1vw;
     filter: drop-shadow(0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.442));
+}
+  
+#servings-btn:hover {
+    cursor: pointer;
   }
   
-  #servings-btn:hover {
-    cursor: pointer;
+  table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   
   .td-left {
@@ -239,86 +239,99 @@ body {
   .row-grey {
     background-color: rgb(240, 240, 240);
   }
-  
+
   .recipe-full {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
-  .portions {
+}
+
+.portions {
     width: 70vw;
     display: flex;
     justify-content: start;
     align-items: center;
     color: rgba(0, 0, 0, 0.666);
-  }
-  
-  .recipe-ingredients {
+}
+
+.recipe-ingredients {
     width: 70vw;
-  }
-  
-  #the-line {
+}
+
+#the-line {
     width: 69vw;
     height: 0.1vw;
     background-color: rgba(128, 128, 128, 0.338);
     margin-left: 14vw;
     margin-top: 3vw;
-  }
-  
-  #text-input {
+}
+
+#servings-btn {
+    background-color: rgb(2, 167, 2);
+    color: white;
+    width: 10vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1vw;
+    filter: drop-shadow(0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.442));
+}
+
+#text-input {
     width: 10vw;
     height: 1.7vw;
     margin-left: 1vw;
-  }
-  
-  #portions-text {
+}
+
+#portions-text {
     padding-right: 1vw;
     font-size: 2vw;
-  }
-  
-  #ingredients-table tbody {
+}
+
+#ingredients-table tbody {
     width: 70vw;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-  }
-  
-  #ingredients-table tbody tr {
+}
+
+#ingredients-table tbody tr {
     padding: 0.7vw;
-  }
-  
-  #ingredients-table tbody tr:nth-child(even) {
+}
+
+#ingredients-table tbody tr:nth-child(even) {
     background-color: rgba(145, 144, 144, 0.145);
     border-radius: 0.4vw;
     width: 70vw;
-  }
-  
-  #ingredients-table tbody tr {
+    font-size: 1.2vw;
+}
+
+#ingredients-table tbody tr { 
     width: 70vw;
-    font-size: 2vw;
-  }
-  
-  #ingredients-table {
+    font-size: 1.5vw;
+}
+
+#ingredients-table {
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  
-  .ingredient {
+}
+
+.ingredient {
     width: 40vw;
-    text-align: start;
+    text-align: start; 
     padding-left: 2vw;
-  }
-  
-  .amount {
+}
+
+.amount {
     width: 10vw;
     text-align: end;
     padding-left: 1vw;
-  }
+}
   
   h2 {
     margin-top: 32px;
@@ -376,12 +389,12 @@ body {
   }
   
   body.menu-open {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); 
     transition-delay: 1s ease;
   }
   
   
-  .footer-2 {
+  .footer-2  {
     color: white;
     height: 3vw;
     width: 100%;
@@ -473,26 +486,6 @@ body {
       flex-direction: column;
       cursor: pointer;
     }
-  
-    #portions-text {
-      font-size: 3vw;
-    }
-  
-    #text-input {
-      width: 13vw;
-      height: 2.5vw;
-      margin-left: 1.5vw;
-    }
-  
-    #servings-btn {
-      width: 18vw;
-      height: 3.25vw;
-      font-size: 2vw;
-  }
-  
-  #ingredients-table tbody tr {
-    font-size: 2.4vw;
-  }
   }
   
   @media (max-width: 650px) {
@@ -562,7 +555,6 @@ body {
     h1 {
       font-size: 16px;
     }
-  
     .cover-headline {
       width: 80%;
       display: flex;
@@ -638,24 +630,4 @@ body {
     .hamburger-menu {
       width: 50%;
     }
-  
-    #portions-text {
-      font-size: 4vw;
-    }
-  
-    #text-input {
-      width: 15vw;
-      height: 4vw;
-      margin-left: 2vw;
-    }
-  
-    #servings-btn {
-      width: 20vw;
-      height: 5vw;
-      font-size: 3vw;
-  }
-  
-  #ingredients-table tbody tr {
-    font-size: 3vw;
-  }
   }

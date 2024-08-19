@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/png" href="../img/logo_small.png" />
+    <link rel="stylesheet" href="rezeptseite_basti.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../BurgerMe/script.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a href="../../../index.html"><img class="kochwelt-logo" src="./img/logo-space.png" alt="Kochwelt logo" /></a>
+      </div>
+      <div class="navbar">
+        <a class="a-tags mobile-hide" href="../../../index.html">Start</a>
+        <a class="a-tags mobile-hide" href="../../RecipeView/recipe.html">Rezept des Tages</a>
+        <a class="a-tags mobile-hide" href="../kontaktformular/index.html">Kontakt</a>
+        <a class="a-tags mobile-hide" href="../../Kochwelt/impressum.html">Impressum</a>
+      </div>
+  
+      <div class="hamburger-icon" id="rotateButton">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+  
+      <div class="hamburger-menu d-none" id="fenster">
+        <a class="a-tags" href="../../../index.html">Start</a>
+        <a class="a-tags" href="../../RecipeView/recipe.html">Rezept des Tages</a>
+        <a class="a-tags" href="../kontaktformular/index.html">Kontakt</a>
+        <a class="a-tags" href="../../Kochwelt/impressum.html">Impressum</a>
+      </div>
+  
+    </header>
+  
+
+    <section class="cover">
+      <div class="cover-headline">
+        <h1>Mozarellahähnchen mit Tomate und Basilikum</h1>
+        <div class="image">
+          <img
+            class="food-img"
+            src="./img/rezeptseitebanner.jpg"
+            alt="Hackballchen in Tomatensauce"
+          />
+        </div>
+
+        <div class="info-field-container">
+          <div class="time-container">
+            <div class="clock">
+              <img
+                class="clock-image"
+                src="./img/icons/clock-regular.svg"
+                alt="Clock logo"
+              />
+            </div>
+            <div class="time">ca. 50 Min</div>
+          </div>
+
+          <div class="brain-container">
+            <div class="brain">
+              <img
+                class="brain-image"
+                src="./img/icons/brain-solid.svg"
+                alt="Brain logo"
+              />
+            </div>
+            <div class="toughness">simpel</div>
+          </div>
+
+          <div class="cal-container">
+            <div class="cal">
+              <img
+                class="cal-image"
+                src="./img/icons/calendar-alt-regular.svg"
+                alt="Brain logo"
+              />
+            </div>
+            <div class="date">14.08.2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border" />
+
+    <div class="recipe-full">
+        <div class="portions">
+            <p id="portions-text">Zutaten für</p>
+            <input id="text-input" type="number" name="quantity" min="1" max="101" step="1">
+            <p id="servings-btn" onclick="applyFactor()">Portionen</p>
+        </div>
+    
+        <div id="ingredients-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="amount" data-base-amount="1" data-unit="Stk.">1 Stk.</td>
+                        <td class="ingredient">Hähnchenbrustfilet(s)</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="6" data-unit="g">6 g</td>
+                        <td class="ingredient">Salz</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="0.25" data-unit="EL">0.25 EL</td>
+                        <td class="ingredient">Öl</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="62.5" data-unit="g">62.5 g</td>
+                        <td class="ingredient">Cocktailtomaten</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="0.25" data-unit="Topf">0.25 Topf</td>
+                        <td class="ingredient">Basilikum</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="50" data-unit="g">50 g</td>
+                        <td class="ingredient">Sahne</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="25" data-unit="g">25 g</td>
+                        <td class="ingredient">Sahneschmelzkäse</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="1" data-unit="EL">1 EL</td>
+                        <td class="ingredient">Fett für die Form</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="31.25" data-unit="g">31.25 g</td>
+                        <td class="ingredient">Mozzarella</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="50" data-unit="g">50 g</td>
+                        <td class="ingredient">Parmesan, optional</td>
+                    </tr>
+                    <tr>
+                        <td class="amount" data-base-amount="0.25" data-unit="EL">0.25 EL</td>
+                        <td class="ingredient">Kräuterbutter, optional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h2>Zubereitung</h2>
+    <section class="preparation">
+      <div class="info-field-container-low">
+        <div class="full-time-container">
+          <div class="clock">
+            <img
+              class="clock-image"
+              src="./img/icons/clock-regular.svg"
+              alt="Clock logo"
+            />
+          </div>
+          <div class="time">Gesamtzeit ca. 50. Min</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="description">
+      <span>
+        Fleisch waschen und trocken tupfen. Mit Salz und Pfeffer würzen. Öl in
+        einer Pfanne erhitzen. Filets darin von allen Seiten ca. 5 Min. kräftig
+        anbraten. <br />
+        <br />
+
+        Tomaten waschen und halbieren. Basilikumblätter abzupfen, waschen und
+        fein hacken. <br />
+        <br />
+
+        Sahne in einem Topf aufkochen lassen. Schmelzkäse hineinrühren und
+        schmelzen lassen. Mit Salz und Pfeffer würzen. 2/3 vom Basilikum
+        unterrühren. <br />
+        <br />
+
+        Fleisch und Tomaten in eine gefettete Auflaufform geben. Sauce darüber
+        gießen. Mozzarella in kleine Stückchen schneiden und auf dem Fleisch
+        verteilen. Wer mag, kann noch geriebenen Parmesan und 1 EL Kräuterbutter
+        in kleinen Flöckchen darauf verteilen. Im vorgeheizten Ofen bei 200 °C
+        Ober-/Unterhitze bzw. 175 °C Umluft ca. 30 Min. backen. Herausnehmen und
+        mit restlichem Basilikum bestreuen. <br />
+        <br />
+
+        Dazu schmecken Kroketten oder Reis.
+      </span>
+
+      <h3>Rezept erstellt von</h3>
+
+      <div class="footer">
+        <img
+          class="creator"
+          src="./img/profilimage.jpg"
+          alt="Picture of the creator Gabriel Mali"
+        />
+        <span class="name">Sebastian Böhme</span>
+      </div>
+    </section>
+
+    <div class="footer-2">
+      <div class="copyright">
+          <p>© 2024 Kochwelt</p>
+      </div>
+
+      <div class="info">
+          <a href="#">Impressum</a>
+          <p>|</p>
+          <a href="#">Datenschutz</a>
+      </div>
+  </div>
+  </body>
+  <script src="script.js"> 
+    document.getElementById('rotateButton').addEventListener('click', function () {
+      const fenster = document.getElementById('fenster');
+  
+      if (fenster.classList.contains('open')) {
+        fenster.style.transform = 'rotateX(90deg)';
+        fenster.classList.remove('open');
+        setTimeout(() => {
+          fenster.style.display = 'none';
+        }, 500);
+      } else {
+        // Menü öffnen
+        fenster.style.display = 'flex';
+        setTimeout(() => {
+          fenster.style.transform = 'rotateX(0deg)';
+        }, 1);
+        fenster.classList.add('open');
+      }
+    });
+  </script>
+</html>
